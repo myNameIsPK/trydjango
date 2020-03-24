@@ -15,6 +15,8 @@ import os
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 
+print(BASE_DIR) #print dir of proj when you run server 
+    #in my pc is C:\Users\DELL_G3\OneDrive - KMITL\Documents\VScodeFile\trydjango\mycookbook
 
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/3.0/howto/deployment/checklist/
@@ -103,15 +105,15 @@ AUTH_PASSWORD_VALIDATORS = [
 # Internationalization
 # https://docs.djangoproject.com/en/3.0/topics/i18n/
 
-LANGUAGE_CODE = 'en-us'
+LANGUAGE_CODE = 'en-us' #ตัวแปรที่ใช้เก็บภาษา default ที่ระบบจะแสดงผล
 
-TIME_ZONE = 'UTC'
+TIME_ZONE = 'UTC' #ใช้เก็บ timezone ตามปกติ
 
-USE_I18N = True
+USE_I18N = True #บอกว่าระบบรองรับI18N(Internationalization)คือระบบการแปลภาษาในหน้าเวปไซด์ให้รองรับหลาย ๆ ภาษา
 
-USE_L10N = True
+USE_L10N = True #บอกว่าweb serverของเราsupport L10N(Localization)ซึ่งI18Nจะครอบคลุมถึงการแปลภาษาบนหน้าจอเท่านั้น ส่วน L10N จะมีส่วนไปถึงการแสดงผลต่าง ๆ เช่น รูปแบบการแสดงวันที่, การแสดงหน่วยของเงิน เป็นต้น
 
-USE_TZ = True
+USE_TZ = True #เก็บว่าweb serverรองรับTimezoneหรือไม่ หากเป็นfalseระบบจะใช้เวลาตามเครื่องserver
 
 
 # Static files (CSS, JavaScript, Images)
