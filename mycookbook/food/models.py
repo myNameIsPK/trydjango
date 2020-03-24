@@ -5,3 +5,4 @@ class Food(models.Model):
     title       = models.TextField()
     description = models.TextField()
     materials   = models.TextField()
+    price       = models.TextField(default='More than 0 baht')
